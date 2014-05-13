@@ -170,6 +170,15 @@ $(function() {
 
 	// refresh count of todos to be completed.
 
+function refreshCount(){
+	console.log('f');
+	var n = $('#todo-list li').length;
+	$('span#todo-count').text(n + "items left");
+	console.log(n);
+}
+
+
+
 	// add destroy function
 
 	// add complete all function
@@ -178,13 +187,11 @@ $(function() {
 
 	// add filter functions.
 
-	//a
 
 
-<<<<<<< HEAD
+
+
 	setListeners();
 });
-=======
-	standUp();
-});
->>>>>>> FETCH_HEAD
+	
+
